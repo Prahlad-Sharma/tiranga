@@ -704,7 +704,7 @@ const addTrxWingo = async (game) => {
       } else {
         let response = await axios({
           method: "GET",
-          url: "https://apilist.tronscanapi.com/api/block?sort=-balance&start=0&limit=20&producer=&number=&start_timestamp=&end_timestamp=",
+          url: "https://api.trongrid.io/v1/blocks?limit=20",
           headers: {
             "TRON-PRO-API-KEY": process.env.TRON_API_KEY,
           },
